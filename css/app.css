@@ -1,4 +1,22 @@
- .cd-filter, .cd-intro {
+body {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #E10E49;
+}
+
+.cd-title {
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.cd-title h1 {
+  font-size: 2rem;
+}
+
+.cd-filter, .cd-intro {
   width: 90%;
   text-align: center;
 }
@@ -40,6 +58,30 @@
 .cd-filter label:hover {
   border-color: rgba(255, 255, 255, 0.7);
 }
+
+.cd-headline {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+/* -------------------------------- 
 
 xscale 
 
