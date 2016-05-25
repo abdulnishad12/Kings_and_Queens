@@ -7,13 +7,13 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/navcssnormalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/navcss/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/navcss/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/navcsss/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/navcsss/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/navcsss/component.css" />
   </head>
   <body>
     <section class="section section--menu" id="Miranda">
-        <h2 class="section__title">Miranda</h2>
+        
         <span class="link-copy"></span>
         <nav class="menu menu--miranda">
           <ul class="menu__list">
@@ -24,7 +24,7 @@
             <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
           </ul>
         </nav>
-        <p class="info">Inspired by the menu seen on <a href="http://spg.se/">spg.se</a></p>
+       
       </section>
       
     <div class="row expanded">
@@ -72,5 +72,44 @@
       <script src="js/anim.js"></script>
       <script src="js/navjs/classie.js"></script>
     <script src="js/navjs/clipboard.min.js"></script>
+
+    <script>
+
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+            ev.preventDefault();
+
+            var item = ev.target.parentNode; // li
+
+            // return if already current
+            if (classie.has(item, 'menu__item--current')) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+
+      [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+        link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+        new Clipboard(link);
+        link.addEventListener('click', function() {
+          classie.add(link, 'link-copy--animate');
+          setTimeout(function() {
+            classie.remove(link, 'link-copy--animate');
+          }, 300);
+        });
+      });
+    })(window);
+
+    </script>
   </body>
 </html>
