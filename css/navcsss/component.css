@@ -447,18 +447,18 @@
 	display: block;
 	min-width: 120px;
 	text-align: center;
-	color: #b5b5b5;
+	color: #ffffff ;/*#b5b5b5*/
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
 .menu--miranda .menu__link:hover,
 .menu--miranda .menu__link:focus {
-	color: #929292;
+	color: black;/*#929292*/
 }
 
 .menu--miranda .menu__item--current .menu__link {
-	color: #d94f5c;
+	color: black; /*#d94f5c*/
 }
 
 .menu--miranda .menu__item::before,
@@ -467,7 +467,7 @@
 .menu--miranda .menu__link::after {
 	content: '';
 	position: absolute;
-	background: #d94f5c;
+	background:black; /* #d94f5c;*/
 	-webkit-transition: -webkit-transform 0.1s;
 	transition: transform 0.1s;
 	-webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -2490,10 +2490,15 @@
 }
 
 .menu--juliet .menu__link::after {
-	background: #d94f5c;
+	/*background: #d94f5c;*/
 }
 
 /* End: Juliet Styles */
+
+
+
+
+
 
 /* Invulner Styles */
 
