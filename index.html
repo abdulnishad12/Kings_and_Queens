@@ -11,6 +11,8 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/app.css">
 
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -40,9 +42,8 @@
             background-size: cover;
         }
         
-        #myNavbar ul{
-            text-align: right;
-        }
+      
+       
         
         #home h2{
             color: gold;
@@ -275,7 +276,7 @@
             </div>
             <!-- end navbar header -->
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navright">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#services">OUR SERVICES</a></li>
                     <li><a href="#portfolio">LATEST TRENDS</a></li>
@@ -371,7 +372,7 @@
         <div class="container-fluid line-separator"></div>
         <!-- line -->
         <div class="container-fluid bg1">
-    <div class="row expanded" id="portfolio">
+    <div class="sm-12-col" id="portfolio">
             <ul class="portfolio cs-style-2 ">
                 <div class="row text-center pad-bottom">
                     <div class="col-sm-4">

@@ -1,3 +1,13 @@
+#navright{
+            text-align: right;
+            margin-left: 20%;
+    font-size: 4em;
+        }
+        
+
+
+
+
 body {
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
