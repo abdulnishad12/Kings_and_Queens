@@ -38,7 +38,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 0em;
+	padding: 2em;
 	background: black;
 	color: crimson;
 }
@@ -50,7 +50,7 @@
 }
 
 .portfolio figcaption span:before {
-	content: 'by ';
+/*	content: 'by ';*/
 }
 
 .portfolio figcaption a {
