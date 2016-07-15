@@ -29,7 +29,7 @@ background-color: #E10E49;
 
 
 #about{
-background-color: whitesmoke;
+
 background-image: url(../images/5.jpg) no-repeat cover;
 }
 
@@ -45,7 +45,7 @@ box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
 border-bottom:2px solid #fff;
 border-right:2px solid #fff;
 margin:5% auto 0 auto; 
-background:url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
+background:url(/images/10.jpg);
 background-size:cover;
 border-radius:5px;
 overflow:hidden;}
