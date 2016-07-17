@@ -27,6 +27,11 @@ color: #fff;
 background-color: #E10E49;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 
 #about{
 
