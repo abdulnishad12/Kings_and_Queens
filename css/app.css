@@ -34,6 +34,7 @@ video {
 
 
 #about{
+  background: rgba(0,0,0,9);
 
 /*background: url(../images/5.jpg) no-repeat;*/
 background-size: cover;
@@ -227,7 +228,7 @@ overflow:hidden;}
 #overlay    {  
 background:rgba(0,0,0,.75);
 text-align:center;
-padding:45px 0 66px 0;
+/*padding:45px 0 66px 0;*/
 opacity:0;
 -webkit-transition: opacity .25s ease;
 -moz-transition: opacity .25s ease;}
@@ -235,12 +236,15 @@ opacity:0;
 #box:hover #overlay {
 opacity:1;}
 
-#plus       {  font-family:Helvetica;
+#plus       {  
+font-family:Helvetica;
 font-weight:900;
-color:rgba(255,255,255,.85);
+color:ghostwhite;
 font-size:96px;}
 
-
+#plus h4{
+  color:ghostwhite;
+}
 
 
 
